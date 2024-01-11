@@ -9,10 +9,6 @@ var iconDetailTextStyle = const TextStyle(
 class DetailScreen extends StatelessWidget {
   final Recipe recipe;
 
-  // List<Widget> _detailList = recipe.ingredients.map((ing) {
-  //   return Text('');
-  // }).toList();
-
   const DetailScreen({super.key, required this.recipe});
 
   @override
@@ -191,15 +187,3 @@ class _FavoriteButtonState extends State<FavoriteButton> {
     );
   }
 }
-
-class DetailList {
-  final List<String> list;
-
-  DetailList({required this.list});
-
-  @override
-  String toString() {
-    return '';
-  }
-}
-
