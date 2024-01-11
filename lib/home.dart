@@ -11,11 +11,14 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Recipes For You'),
+        title: Text('Welcome back, $username'),
+        foregroundColor: Colors.white,
+        elevation: 8,
+        backgroundColor: Colors.teal,
       ),
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.symmetric(horizontal: 8.0),
           child: ListView.builder(
             itemBuilder: (context, index) {
               if (index < recipeList.length) {
@@ -27,6 +30,10 @@ class HomeScreen extends StatelessWidget {
                     }));
                   },
                   child: Card(
+                    color: Colors.white,
+                    shadowColor: Colors.amber,
+                    clipBehavior: Clip.hardEdge,
+                    elevation: 8,
                     margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                     child: Container(
                       width: double.maxFinite,
