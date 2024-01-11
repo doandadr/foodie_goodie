@@ -22,13 +22,13 @@ var recipeList = [
   Recipe(
       title: 'Crispy Yellow Fried Chicken',
       description: """
-        Another variant of Javanese Fried Chicken: Ayam Goreng Bumbu Kuning, one of my family's favourite side dish!! Kuning means yellow. The name already suggest that this dish is dominated by yellow colour which comes from turmeric. You can find this fried chicken all the way along Java Island.
-        Spice may be varies slightly from region to region but the main ingredient as I mentioned above, turmeric is always present. What about the taste?? Hmmm….it's finger licking good 😉 Crispy & yummy!!.
-        Tip: Cut the chicken into a smaller serving portions to ensure that the spice mixture is well absorbed & the chicken will be crunchy on the outside.
+Another variant of Javanese Fried Chicken: Ayam Goreng Bumbu Kuning, one of my family's favourite side dish!! Kuning means yellow. The name already suggest that this dish is dominated by yellow colour which comes from turmeric. You can find this fried chicken all the way along Java Island.
+Spice may be varies slightly from region to region but the main ingredient as I mentioned above, turmeric is always present. What about the taste?? Hmmm….it's finger licking good 😉 Crispy & yummy!!.
+Tip: Cut the chicken into a smaller serving portions to ensure that the spice mixture is well absorbed & the chicken will be crunchy on the outside.
       """,
       durationMinutes: 45,
       serving: 6,
-      imageAsset: '',
+      imageAsset: 'images/fried-chicken.jpg',
       ingredients: <String>[
         '750 gr chicken, washed',
         '2 pc salam or bay leaves',
@@ -61,13 +61,13 @@ var recipeList = [
   Recipe(
     title: 'Nasi Goreng',
     description: """
-    Important Note: I should warn you that dried shrimp paste smells quite awful especially for Europeans, but the taste in Nasi Goreng or other finished dishes (if required) is greatfully aromatic and essential to the authenticity of Indonesian cuisine. My suggestion, use it only little at first as I write in this recipe. It is less than in my Indonesian version.
-    If preferred you can add shrimps or vegetables into your Nasi Goreng such as: beansprouts, peas or shredded carrots.
-    If you are curious of another variant of Indonesian Nasi Goreng with fried achovies, please look at my "Nasi Goreng Teri/Ikan Bilis" recipe.
+Important Note: I should warn you that dried shrimp paste smells quite awful especially for Europeans, but the taste in Nasi Goreng or other finished dishes (if required) is greatfully aromatic and essential to the authenticity of Indonesian cuisine. My suggestion, use it only little at first as I write in this recipe. It is less than in my Indonesian version.
+If preferred you can add shrimps or vegetables into your Nasi Goreng such as: beansprouts, peas or shredded carrots.
+If you are curious of another variant of Indonesian Nasi Goreng with fried achovies, please look at my "Nasi Goreng Teri/Ikan Bilis" recipe.
     """,
     durationMinutes: 30,
     serving: 2,
-    imageAsset: '',
+    imageAsset: 'images/nasi-goreng.jpg',
     ingredients: <String>[
       '500 g pre-cooked rice and cooled down',
       '150 g chicken fillet, cut in cubes',
@@ -102,12 +102,12 @@ var recipeList = [
   Recipe(
     title: 'Bakso – Meatball Soup',
     description: """
-       This is the famous everday street food in Indonesia: Bakso. You will find it everywhere in the whole nation !! Once you taste it, you will never get enough!!. In Indonesia Bakso will be eaten anywhere, anyplace, anytime, starting from early morning as breakfast until midnight as a supper soup lol 😉
-        Hmmm… It tastes superb & delicious. I think it's hard to find any Indonesian who has never eaten Bakso meatball soup once in a lifetime!!There is no top secret of making tasty & yummy Bakso, not require special trick nor a MSG!! Only one thing : Just add fried shallots to the daugh. I ensure you, the meatballs will taste simply delicious!!
+This is the famous everday street food in Indonesia: Bakso. You will find it everywhere in the whole nation !! Once you taste it, you will never get enough!!. In Indonesia Bakso will be eaten anywhere, anyplace, anytime, starting from early morning as breakfast until midnight as a supper soup lol 😉
+Hmmm… It tastes superb & delicious. I think it's hard to find any Indonesian who has never eaten Bakso meatball soup once in a lifetime!!There is no top secret of making tasty & yummy Bakso, not require special trick nor a MSG!! Only one thing : Just add fried shallots to the daugh. I ensure you, the meatballs will taste simply delicious!!
     """,
     durationMinutes: 60,
     serving: 4,
-    imageAsset: '',
+    imageAsset: 'images/bakso.jpg',
     ingredients: <String>[
       '500 gr beef, good quality without fat, minced',
       '100 gr tapioca flour or corn starch',
@@ -152,12 +152,12 @@ var recipeList = [
   Recipe(
     title: 'Cap Cay',
     description: """
-       One of our family favorite recipe. If you read this recipe, the name sounds like a Chinese food. But if you are in China and ask for this dish at any restaurant, I guarantee, you'll never find it or perhaps nobody knows or ever hear about it. It's a little bit strange, isn't it ??!! 🙂
-        It was said, Cap Cay was created by ethnic Chinese descent who migrated to Indonesia hundred of years back. When and who has created this recipe nobody knows, but one thing I know for sure: This a simple but perfect recipe to warm up your cold winter days 😉
+One of our family favorite recipe. If you read this recipe, the name sounds like a Chinese food. But if you are in China and ask for this dish at any restaurant, I guarantee, you'll never find it or perhaps nobody knows or ever hear about it. It's a little bit strange, isn't it ??!! 🙂
+It was said, Cap Cay was created by ethnic Chinese descent who migrated to Indonesia hundred of years back. When and who has created this recipe nobody knows, but one thing I know for sure: This a simple but perfect recipe to warm up your cold winter days 😉
     """,
     durationMinutes: 20,
     serving: 3,
-    imageAsset: '',
+    imageAsset: 'images/cap-cay.jpg',
     ingredients: <String>[
       '300 gr chicken fillet, cut in cubes',
       '200 gr cauliflower',
@@ -187,14 +187,14 @@ var recipeList = [
   Recipe(
     title: 'Fried Fish with Balinese Chilli Relish',
     description: """
-      There are many different varieties of Indonesian fish dishes. Each is special and unique!!!. Now I introduce you a deep fried fish dish with Sambal Matah, a famous chilli relish from Balinese people. This is a simply recipe but the taste hmmmm…spicy but delicious!!! Especially for you.. chilli lovers 🙂
-      The secret for making delicious "Sambal Matah" is the right amount of dried shrimp paste & salt (It shall taste a bit salty) and of course by using fresh & raw ingredients includes raw garlic :-).
-      Tips: If you're worry about garlic breath, just chew raw celery knob/root soon after eating any meal that contains a lot of garlic. The smell will disappear quickly 🙂
-      Important Note: I should warn you that dried shrimp paste/terasi smells quite awful especially for Europeans, but dried shrimp paste is an essential ingredient for the authenticity as well as the best taste of Sambal Matah. My suggestion, use it only little at first if you're worry with its distinctive smell 🙂
+  There are many different varieties of Indonesian fish dishes. Each is special and unique!!!. Now I introduce you a deep fried fish dish with Sambal Matah, a famous chilli relish from Balinese people. This is a simply recipe but the taste hmmmm…spicy but delicious!!! Especially for you.. chilli lovers 🙂
+  The secret for making delicious "Sambal Matah" is the right amount of dried shrimp paste & salt (It shall taste a bit salty) and of course by using fresh & raw ingredients includes raw garlic :-).
+  Tips: If you're worry about garlic breath, just chew raw celery knob/root soon after eating any meal that contains a lot of garlic. The smell will disappear quickly 🙂
+  Important Note: I should warn you that dried shrimp paste/terasi smells quite awful especially for Europeans, but dried shrimp paste is an essential ingredient for the authenticity as well as the best taste of Sambal Matah. My suggestion, use it only little at first if you're worry with its distinctive smell 🙂
     """,
     durationMinutes: 40,
     serving: 2,
-    imageAsset: '',
+    imageAsset: 'images/fried-fish.jpg',
     ingredients: <String>[
       '600 g sea bream (or replace snapper if preferred)',
       '2 cm fresh turmeric or 1/2 tsp ground turmeric',
