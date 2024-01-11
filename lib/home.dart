@@ -1,51 +1,82 @@
 import 'package:flutter/material.dart';
+import 'package:foodie_goodie/detail.dart';
+import 'package:foodie_goodie/model/recipe.dart';
 
 class HomeScreen extends StatelessWidget {
-  String username = '';
+  final String username;
 
-  HomeScreen({super.key, required this.username});
+  const HomeScreen({super.key, required this.username});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Recipes For You'),
+        title: const Text('Recipes For You'),
       ),
-      body: Card(
-
-        child: Container(
-          height: 300,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Expanded(
-                flex: 2,
-                child: Image.network(url),
-              ),
-              Expanded(
-                flex: 1,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text(
-                      'Sayur Bayam',
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontFamily: 'Dosis',
-                        fontWeight: FontWeight.bold,
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: ListView.builder(
+            itemBuilder: (context, index) {
+              if (index < recipeList.length) {
+                final Recipe recipe = recipeList[index];
+                return InkWell(
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) {
+                      return DetailScreen(recipe: recipe);
+                    }));
+                  },
+                  child: Card(
+                    margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                    child: Container(
+                      width: double.maxFinite,
+                      height: 300,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Expanded(
+                            flex: 2,
+                            child: Image.asset(
+                              recipe.imageAsset,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          Expanded(
+                            flex: 1,
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    recipe.title,
+                                    style: const TextStyle(
+                                      fontSize: 16,
+                                      fontFamily: 'Dosis',
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Text(
+                                    recipe.description,
+                                    style: const TextStyle(
+                                        fontFamily: 'Bitter'
+                                    ),
+                                    overflow: TextOverflow.ellipsis,
+                                    maxLines: 3,
+                                    textAlign: TextAlign.start,
+                                  )
+                                ],
+                              ),
+                            ),
+                          )
+                        ],
                       ),
                     ),
-                    // Text(
-                    //   'Masakan khas lorem ipsum dolor sir amet amera and a oa oiadaod aod oa dha doaid oaiwd aw iwh iua idaw idawudaw uid aifh hfw9 f9w f9a f97a4wf9whfa9f a9-7f ',
-                    //   style: TextStyle(
-                    //     fontFamily: 'Bitter'
-                    //   ),
-                    // )
-                  ],
-                ),
-              )
-            ],
+                  ),
+                );
+              }
+              return null;
+            }
           ),
         ),
       )
