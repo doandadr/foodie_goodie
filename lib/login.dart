@@ -103,9 +103,34 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
-                      return HomeScreen(username: _usernameController.text,);
-                    }));
+                    if (_usernameController.text.isNotEmpty && _passwordController.text.isNotEmpty) {
+                      Navigator.pushReplacement(context,
+                          MaterialPageRoute(builder: (context) {
+                        return HomeScreen(
+                          username: _usernameController.text,
+                        );
+                      }));
+                    } else {
+                      showDialog<void>(
+                        context: context,
+                        barrierDismissible: true,
+                        // false = user must tap button, true = tap outside dialog
+                        builder: (BuildContext dialogContext) {
+                          return AlertDialog(
+                            content: Text('Username and password fields must be filled!'),
+                            actions: <Widget>[
+                              TextButton(
+                                child: Text('OK'),
+                                onPressed: () {
+                                  Navigator.of(dialogContext)
+                                      .pop(); // Dismiss alert dialog
+                                },
+                              ),
+                            ],
+                          );
+                        },
+                      );
+                    }
                   },
                 ),
                 SizedBox(height: 8,),
