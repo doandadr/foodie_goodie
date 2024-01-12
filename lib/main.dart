@@ -22,7 +22,3 @@ class MyApp extends StatelessWidget {
   }
 }
 
-List<Color> themeColors = [
-  Colors.amber,
-  Colors.teal
-];
